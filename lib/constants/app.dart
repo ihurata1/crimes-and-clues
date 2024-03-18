@@ -7,7 +7,7 @@ class Application {
   static int versionCode = 0; //Updated from env.json file.
   static String versionName = ""; //Updated from env.json file.
   static String name = "boilerplate"; //Updated from env.json file.
-  static String apiBaseUrl = "http://192.168.1.172:5000/api";
+  static String apiBaseUrl = "https://65ba2404b4d53c066552249e.mockapi.io/api/CrimesAndClues";
 
   ///Updated from env.json file.
 

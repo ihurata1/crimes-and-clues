@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933821699786",
+    "project_id": "crimes-and-clues-backend",
+    "storage_bucket": "crimes-and-clues-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933821699786:android:bc0d8efce43a85c6d64633",
+        "android_client_info": {
+          "package_name": "com.hurata.crimesandclues"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnmK8tiQ66MKbJhBYF_jxjyfVqrusW7Y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

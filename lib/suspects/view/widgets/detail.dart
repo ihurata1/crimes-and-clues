@@ -1,6 +1,7 @@
 import 'package:CrimesAndClues/constants/colors.dart';
 import 'package:CrimesAndClues/helpers/device_info/device_info.dart';
 import 'package:CrimesAndClues/helpers/navigator/navigator.dart';
+import 'package:CrimesAndClues/suspects/model/suspect%20_hive.dart';
 import 'package:CrimesAndClues/suspects/model/suspect.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -8,12 +9,10 @@ import 'package:google_fonts/google_fonts.dart';
 class SuspectsDetailWidget extends StatelessWidget {
   const SuspectsDetailWidget({
     super.key,
-    required this.suspectsList,
     required this.index,
   });
 
-  final List<SuspectModel> suspectsList;
-  final int index;
+  final SuspectHiveModel index;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class SuspectsDetailWidget extends StatelessWidget {
                 gradient: const LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [AppColor.white, AppColor.investingBeige],
+                  colors: [AppColor.crimeBlueLightest, AppColor.white, AppColor.crimeBlueLightest],
                 ),
                 border: Border.all(width: 2.0),
               ),
@@ -53,7 +52,7 @@ class SuspectsDetailWidget extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        suspectsList[index].image!,
+                        "assets/suspects/man2.png",
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -67,7 +66,7 @@ class SuspectsDetailWidget extends StatelessWidget {
                             padding: EdgeInsets.only(top: DeviceInfo.height(2)),
                             width: DeviceInfo.width(80),
                             child: Text(
-                              "İsim: ${suspectsList[index].name!.toUpperCase()}",
+                              "İsim: ${index.name!.toUpperCase()}",
                               textAlign: TextAlign.center,
                               style: GoogleFonts.robotoMono(
                                 fontSize: 16,
@@ -80,10 +79,10 @@ class SuspectsDetailWidget extends StatelessWidget {
                             padding: EdgeInsets.only(top: DeviceInfo.height(2)),
                             width: DeviceInfo.width(80),
                             child: Text(
-                              "Yaş: ${suspectsList[index].age!}",
+                              "Yaş: ${index.age!}",
                               textAlign: TextAlign.center,
                               style: GoogleFonts.robotoMono(
-                                fontSize: 14,
+                                fontSize: 16,
                                 color: AppColor.gunmetalGray,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -93,23 +92,41 @@ class SuspectsDetailWidget extends StatelessWidget {
                             padding: EdgeInsets.only(top: DeviceInfo.height(2)),
                             width: DeviceInfo.width(80),
                             child: Text(
-                              "Kurbanla İlişkisi: ${suspectsList[index].relavence!}",
+                              "Kurbanla İlişkisi: ${index.relevance!}",
                               textAlign: TextAlign.center,
                               style: GoogleFonts.robotoMono(
-                                fontSize: 14,
+                                fontSize: 16,
                                 color: AppColor.gunmetalGray,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.only(top: DeviceInfo.height(2), bottom: DeviceInfo.height(2)),
+                            margin: EdgeInsets.symmetric(vertical: DeviceInfo.height(2)),
+                            color: AppColor.gunmetalGray,
+                            height: DeviceInfo.height(0.2),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(bottom: DeviceInfo.height(2)),
                             width: DeviceInfo.width(80),
                             child: Text(
-                              "İfadesi: ${suspectsList[index].statement!}",
+                              "İfadesi",
                               textAlign: TextAlign.start,
                               style: GoogleFonts.robotoMono(
-                                fontSize: 14,
+                                fontSize: 18,
+                                color: AppColor.gunmetalGray,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(bottom: DeviceInfo.height(2)),
+                            width: DeviceInfo.width(80),
+                            child: Text(
+                              "${index.statement!}",
+                              textAlign: TextAlign.start,
+                              style: GoogleFonts.robotoMono(
+                                fontSize: 16,
                                 color: AppColor.gunmetalGray,
                                 fontWeight: FontWeight.bold,
                               ),

@@ -3,7 +3,6 @@
 import 'package:CrimesAndClues/constants/app.dart';
 import 'package:CrimesAndClues/constants/colors.dart';
 import 'package:CrimesAndClues/helpers/app_helper/app_helper.dart';
-import 'package:CrimesAndClues/helpers/app_helper/app_preferences.dart';
 import 'package:CrimesAndClues/screens/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:CrimesAndClues/components/paints/background_paint.dart';
+import 'package:CrimesAndClues/components/paints/home_background_paint.dart';
 import 'package:flutter/material.dart';
 
 class AppContainer extends StatelessWidget {
@@ -29,8 +29,9 @@ class AppContainer extends StatelessWidget {
         /*top: false,
         bottom: false,*/
         child: CustomPaint(
-          painter: AppBackgroundPainter(firstColor: firstColor, secondColor: secondColor, thirdColor: thirdColor),
+          painter: AppHomeBackgroundPainter(),
           child: Container(
+            color: isGradient ? bgColor.withOpacity(0) : bgColor,
             child: child,
           ),
         ),
