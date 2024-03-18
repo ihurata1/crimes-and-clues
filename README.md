@@ -1,16 +1,12 @@
-# boilerplate
+# Crimes and Clues
 
-A new Flutter project.
+A new Flutter Game where you try to catch the killer.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+https://github.com/ihurata1/crimes-and-clues/assets/79535523/72ce0187-4fbd-41aa-89e1-cbb93291cd4f
+https://github.com/ihurata1/crimes-and-clues/assets/79535523/94e77774-f26f-4c39-8509-263e65e87527
+https://github.com/ihurata1/crimes-and-clues/assets/79535523/99ea212c-2153-4c18-89ec-b8173ae67b82
+https://github.com/ihurata1/crimes-and-clues/assets/79535523/bb6732d7-45de-4720-81df-ef6c9ded6df7
+https://github.com/ihurata1/crimes-and-clues/assets/79535523/cb20e1ae-7d4b-4f56-a861-e155758c7d28
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
